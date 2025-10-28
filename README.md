@@ -133,6 +133,6 @@ All endpoint are provide to **localhost:8080**
 - **500 Internal Server Error**: Internal server error
 
 ## What's new?
-- Version 1.7
+- Version 1.9
 - Fixed banner issue
 - Added **Docker**
