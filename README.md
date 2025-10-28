@@ -14,13 +14,21 @@ This Back-end API allows you to resolve a word search.This API provide you the x
 - Log4j2
 - Git 2.34.1
 - Ubuntu 22.4
+- Docker 28.2.2
 
-
-## Future Features
+## Future Feature
 
 - JUnit
-- Docker
-## Run Locally
+
+##To Run Locally
+
+###Option 1
+- Java 21
+- Git 2.34.1
+###Option 2
+- Docker 28.2.2
+
+## Run Locally (with java + git)
 
 Clone the project
 
@@ -39,6 +47,18 @@ Start the application
   java -jar target/*.jar
 ```
 
+## Run Locally (with docker)
+
+Pull the image
+
+```bash
+  docker pull mateusdev26/jfinder:latest
+```
+
+Run the container
+```bash
+  docker run -p 8080:8080 mateusdev26/jfinder:latest
+```
 
 # API Reference
 
@@ -114,9 +134,5 @@ All endpoint are provide to **localhost:8080**
 
 ## What's new?
 - Version 1.7
-- Developmented class **FinderUtil**
-- Defined **FinderUtil** as a @Bean 
-- Method GET /find in **JfinderControler**
-- Class **Word** and **JfinderService** developmented 
-- Renamed class **RequestBody** to **Puzzle**
-- Added banner
+- Fixed banner issue
+- Added **Docker**
