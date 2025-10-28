@@ -52,12 +52,12 @@ Start the application
 Pull the image
 
 ```bash
-  docker pull mateusdev26/jfinder:latest
+  docker pull mateusdev26/jfinder:1.9v
 ```
 
 Run the container
 ```bash
-  docker run -p 8080:8080 mateusdev26/jfinder:latest
+  docker run -p 8080:8080 mateusdev26/jfinder:1.9v
 ```
 
 # API Reference
