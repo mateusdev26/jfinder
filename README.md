@@ -20,12 +20,12 @@ This Back-end API allows you to resolve a word search.This API provide you the x
 
 - JUnit
 
-##To Run Locally
+## To Run Locally
 
-###Option 1
+### Option 1
 - Java 21
 - Git 2.34.1
-###Option 2
+### Option 2
 - Docker 28.2.2
 
 ## Run Locally (with java + git)
