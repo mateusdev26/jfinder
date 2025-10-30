@@ -1,6 +1,7 @@
 package com.jfinder.util;
 
 import com.jfinder.domain.Word;
+import com.jfinder.exception.GridNotValidException;
 import com.jfinder.request.Puzzle;
 import lombok.extern.log4j.Log4j2;
 
@@ -12,6 +13,11 @@ public class FinderUtil {
 
     public List<Word> findWords(Puzzle puzzle) {
         final List<List<Character>> grid = puzzle.getGrid();
+        for (int i = 0; i < grid.size(); i++) {
+            if (grid.get(i) == null || grid.get(i).size() != grid.size()) {
+                throw new GridNotValidException("This grid isn't valid.Make sure that it's a perfect square");
+            }
+        }
         final List<String> hiddenWords = puzzle.getHiddenWords();
         List<Word> output = new ArrayList<>();
         log.info("Words found:");
