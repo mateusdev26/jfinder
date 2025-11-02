@@ -15,10 +15,7 @@ This Back-end API allows you to resolve a word search.This API provide you the x
 - Git 2.34.1
 - Ubuntu 22.4
 - Docker 28.2.2
-
-## Future Feature
-
-- JUnit
+- Junit 4.13.2
 
 ## To Run Locally
 
@@ -133,6 +130,6 @@ All endpoint are provide to **localhost:8080**
 - **500 Internal Server Error**: Internal server error
 
 ## What's new?
-- Version 1.9
-- Fixed banner issue
-- Added **Docker**
+- Version 2.1
+- FinderUtil : @Bean -> @Component
+- Added **Junit**
