@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.jfinder</groupId>
 	<artifactId>jfinder</artifactId>
-	<version>1.0</version>
+<version>1.9</version>
 	<name>jfinder</name>
     <packaging>jar</packaging>
 	<description>Java API that resolve word puzzles</description>
