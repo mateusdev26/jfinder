@@ -7,8 +7,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JfinderConfig {
-    @Bean
-    public FinderUtil finderUtil(){
-        return new FinderUtil();
-    }
+
 }

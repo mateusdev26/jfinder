@@ -5,6 +5,7 @@ import com.jfinder.domain.Word;
 import com.jfinder.exception.GridNotValidException;
 import com.jfinder.request.Puzzle;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 
 @Log4j2
+@Component
 public class FinderUtil {
     public List<Word> findWords(List<List<Character>> grid,List<String> hiddenWords){
         return findWords(new Puzzle(grid,hiddenWords));
