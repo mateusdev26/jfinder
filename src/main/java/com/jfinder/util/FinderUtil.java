@@ -22,7 +22,7 @@ public class FinderUtil {
         final List<List<Character>> grid = puzzle.getGrid();
         for (int i = 0; i < grid.size(); i++) {
             if (grid.get(i) == null || grid.get(i).size() != grid.size()) {
-                log.warn("Grid inválido na linha {}", i);
+                log.warn("Invalid grid at line '{}'", i);
                 throw new GridNotValidException("This grid isn't valid. Make sure that it's a perfect square");
             }
         }
