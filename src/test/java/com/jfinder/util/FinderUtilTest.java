@@ -42,7 +42,7 @@ class FinderUtilTest {
                 List.of('X', 'X', 'X', 'X')
 
         );
-        assertThrows(GridNotValidException.class, () -> finderUtil.findWords(notValidGrid, List.of()));
+        assertThrows(GridNotValidException.class, () -> finderUtil.findWords(notValidGrid, List.of("XXXX" )));
     }
 
 }

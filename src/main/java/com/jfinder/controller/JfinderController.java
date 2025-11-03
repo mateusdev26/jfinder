@@ -3,6 +3,7 @@ package com.jfinder.controller;
 import com.jfinder.domain.Word;
 import com.jfinder.request.Puzzle;
 import com.jfinder.service.JfinderService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,7 @@ import java.util.List;
 public class JfinderController {
     private final JfinderService jfinderService;
     @GetMapping("/find")
-    public List<Word> find(@RequestBody Puzzle puzzle){
+    public List<Word> find(@RequestBody @Valid Puzzle puzzle){
         return jfinderService.find(puzzle);
     }
 }
