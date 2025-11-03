@@ -49,12 +49,12 @@ Start the application
 Pull the image
 
 ```bash
-  docker pull mateusdev26/jfinder:2.1v
+  docker pull mateusdev26/jfinder:2.2v
 ```
 
 Run the container
 ```bash
-  docker run -p 8080:8080 mateusdev26/jfinder:2.1v
+  docker run -p 8080:8080 mateusdev26/jfinder:2.2v
 ```
 
 # API Reference
@@ -130,6 +130,5 @@ All endpoint are provide to **localhost:8080**
 - **500 Internal Server Error**: Internal server error
 
 ## What's new?
-- Version 2.1
-- FinderUtil : @Bean -> @Component
-- Added **Junit**
+- Version 2.2
+- Added validation
